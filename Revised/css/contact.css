@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+
+
+/* ========================================
+   　クリアふぃくすど
+========================================= */
+.clearfix{
+	clear: both;
+}
+
+/* ========================================
+   　ヘッダー
+========================================= */
+
+/*ヘッダー全体の箱*/
+header {
+	width: 100%;
+	height: 86px;
+	background-color: #fff;
+	border-top: 4px solid #000;
+}
+
+div#header_inner{
+	width: 978px;
+	height: 36px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+header h1 {
+	float: left;
+}
+
+div#header_inner nav{
+	float: right;
+	margin-top: 18px;
+}
+
+div#header_inner nav ul li {
+	float: left;
+	padding-left: 25px;
+	padding-right: 25px;	
+	border-left: 1px solid #000;
+	line-height: 16px;
+}
+
+div#header_inner nav ul li:last-child{
+	border-right: 1px solid #000;
+}
+
+div#header_inner nav ul li a {
+	font-family: 'メイリオ', 'Meiryo', sans-serif;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+}
+
+div#header_inner nav ul li a:hover {
+	color: rgba(0,0,0,0.3);
+}
+
+div#header_inner nav ul li a:active{
+	color: red;
+}
+
+
+
+/* ========================================
+   　メイン画像
+========================================= */
+
+/*二段目全体の箱*/
+div#mainimage {	
+	width: 100%;
+	height: 392px;
+	background-color: #f1f1f1;
+}
+
+div#mainimage p#image{
+	width: 978px;
+	height: 392px;
+	margin: 0 auto;
+}
+
+/* ========================================
+   　私について(プロフィール)
+========================================= */
+
+/*三段目全体の箱*/
+div#profile {
+	width: 100%;
+	height: auto;
+	background-color: #474747;
+}
+
+div#profile_wrapper {
+	width: 978px;
+	height: auto;
+	background-color: #474747;
+	margin: 0 auto;
+	padding-top: 10px;
+	position: relative;
+}
+
+div#profile_wrapper h2 {
+	font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+	font-size: 18px;
+	margin-bottom: 35px;
+	color: #fff;
+}
+
+div#profile_wrapper h2 span {
+	font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+	border-bottom: 4px solid #fff;
+	padding-bottom: 15px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-right: 20px;
+	color: #fff;
+}
+
+div#profile_wrapper form {
+	width: 968px;
+	height: auto;
+	border: 5px solid #454545;
+	background-color: #f1f1f1;
+}
+
+div#profile_wrapper form fieldset legend {
+ font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+ font-size: 18px;
+ font-weight: bold;
+ margin-left: 5px;
+}
+
+div#profile_wrapper form fieldset label.jyouhou{
+	margin-left: 20px;
+}
+
+
+
+div#profile_wrapper form fieldset input#name{
+	width: 915px;
+	margin-left: 20px;
+	height: 20px;
+	margin-bottom: 10px;
+}
+
+div#profile_wrapper form fieldset input#adless{
+	width: 915px;
+	margin-left: 20px;
+	height: 20px;
+	margin-bottom: 10px;
+}
+
+div#profile_wrapper form fieldset input#corporation{
+	margin-left: 20px;
+}
+
+div#profile_wrapper form fieldset input#personal{
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+div#profile_wrapper form fieldset select{
+	margin-left: 20px;
+	width: 915px;
+	margin-bottom: 10px;
+}
+
+div#profile_wrapper form fieldset textarea{
+	margin-left: 20px;
+	width: 915px;
+	margin-bottom: 10px;
+	height: 50px;
+}
+
+div#profile_wrapper form input#botan{
+	height: 50px;
+	width: 150px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-left:791px;
+}
+
+
+/* ========================================
+   　できること(コンテンツ２)
+========================================= */
+
+/*四段目全体の箱*/
+div#skill {
+	width: 100%;
+	height: 453px;
+	background-color: #f1f1f1;
+}
+
+div#skill_wrapper {
+	width: 978px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #f1f1f1;
+	padding-top: 15px;
+}
+
+div#skill div#skill_wrapper h2 {
+	font-size: 18px;
+	font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+	color: #474747;
+	margin-bottom: 30px;
+}
+
+div#skill div#skill_wrapper h2 span {
+	font-size: 24px;
+	font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+	font-weight: bold;
+	padding-bottom: 15px;
+	border-bottom: 4px solid #474747;
+	color: #474747;
+	margin-right: 20px;
+}
+
+div#skill div#skill_wrapper ul li {
+	float: left;
+	margin-right: 20px;
+}
+/*========================================
+   　フッター
+========================================= */
+
+/*フッター全体の箱*/
+footer {
+	width: 100%;
+	height: 73px;
+	background-color: #474747;
+	}
+
+div#footer_inner {
+	width: 978px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #474747;
+}
+
+p#footer {
+	color: #fff;
+	font-size: 18px;
+	line-height: 73px;
+	text-align: center;
+}
+

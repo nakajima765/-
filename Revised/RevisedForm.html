@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="中島聖太のポートフォリオホームページです">
+	<title>中島聖太のポートフォリオサイト</title>
+	<link rel="stylesheet" href="css/contact.css" type="text/css" media="screen">
+</head>
+
+<body>
+	
+	<!--ヘッダーここから-->
+	<header>
+		<div id="header_inner">
+			<h1><a href="index.html"><img src="images/logo.png"></a></h1>
+			<nav>
+				<ul class="cf">
+					
+					<li><a href="index.html">ホーム</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!--ヘッダーここまで-->
+
+	<!--メインイメージここから-->
+	<div id="mainimage">
+		<p id="image"><img src="images/04_contact/contactMain.png"></p>
+	</div>
+	<!--メインイメージここまで-->
+
+	<!--プロフィールここから-->
+	<div id="profile" class="clearfix">
+		<div id="profile_wrapper" class="clearfix">
+			<h2><span>入力フォーム</span>ーFormー</h2>	
+			
+			<form>
+				<fieldset>
+					<legend>基本情報</legend>
+					<label class="jyouhou" for="name">お名前：</label><br>
+					<input id="name" type="text" name="お名前"><br>
+
+					<label class="jyouhou" for="adless">メールアドレス：</label><br>
+					<input id="adless" type="text" name="お名前"><br>
+
+					<label class="jyouhou">区分</label>
+					<input id="personal" type="radio" name="区分" value="個人の方">
+					<label for="personal">個人の方</label>
+					<input id="corporation" type="radio" name="区分" value="企業の方">
+					<label for="corporation">企業の方</label>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>お問い合わせ本文</legend>
+
+					<label class="jyouhou" for="category">お問い合わせの種類</label><br>
+					<select id="category" name="お問い合わせの種類">
+						<option>ご依頼について</option>
+						<option>納期について</option>
+						<option>価格について</option>
+						<option>支払い方法について</option>
+						<option>その他</option>
+					</select><br>
+
+
+					<label class="jyouhou" for="para">本文：</label><br>
+					<textarea id="para" name="本文" placeholder="お問い合わせ内容など、自由にお書きください。"></textarea><br>
+				</fieldset>
+
+				<input id="botan" type="submit" type="hidden" name="tomail" value="送信する" value="s.nakajima765@gmail.com">
+			</form>
+			
+
+			<div id="my_skills" class="clearfix"></div>
+		</div>
+	</div>
+	<!--プロフィールここまで-->
+
+	<!--スキルここから-->
+	
+
+	<!--フッターここから-->
+	<footer>
+		<div id="footer_inner">
+			<p id="footer">Copyright (c) Nakajima Seita Portfolio.</p>
+		</div>
+	</footer>
+	<!--フッターここまで-->
+
+</body>
+
+</html>
